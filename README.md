@@ -32,6 +32,12 @@ Run the following command:
 sh dca.sh
 ```
 
+or 
+
+```bash
+npm start
+```
+
 The result:
 ```bash
 
@@ -108,4 +114,5 @@ Percentage of increase by month of the Bitcoin price in USD (Hypothesis by defau
 │   45    │  46   │       1.495        │     73330      │       49732       │    46000    │
 │   46    │  47   │       1.514        │     75817      │       50726       │    47000    │
 │   47    │  48   │       1.534        │     78353      │       51741       │    48000    │
+└─────────┴───────┴────────────────────┴────────────────┴───────────────────┴─────────────┘
 ```
