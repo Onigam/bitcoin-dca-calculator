@@ -7,5 +7,5 @@
     "start": "sh dca.sh"
   },
   "author": "Magino Marveaux-Cochet",
-  "license": "ISC"
+  "license": "GPL-3.0"
 }
