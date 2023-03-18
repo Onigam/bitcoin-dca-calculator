@@ -2,7 +2,28 @@
 
 This is a simple calculator to help you decide how much to invest in Bitcoin on a regular basis.
 
+It can be used as a npm package or as a standalone script.
+
 ## How to use
+
+### As a npm package
+
+```javascript
+
+const dcaProjection = require('bitcoin-dca-calculator');
+
+const projection = dcaProjection({
+  amountInvestedByMonth: 1000,
+  numberOfYears: 4,
+  startingBitcoinPriceInUSD: 20000,
+  percentageOfIncreaseByMonthOfTheBitcoinPriceInUSD: 2,
+});
+
+console.table(projection);
+
+```
+
+### As a standalone script
 
 ```bash
 
