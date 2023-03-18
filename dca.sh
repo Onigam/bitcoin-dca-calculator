@@ -1,10 +1,10 @@
 #!/bin/bash
 
 echo "Bienvenue dans le programme de projection de Bitcoin"
-read -p "Montant investi par mois en USD : " amountInvestedByMonth
-read -p "Nombre d'années à projeter (par défaut : 4 ans): " numberOfYears
-read -p "Prix de départ du Bitcoin en USD (hypothèse par défaut : 20000 USD): " startingBitcoinPriceInUSD
-read -p "Pourcentage d'augmentation mensuelle du Bitcoin en USD (hypothèse par défaut : 2% par mois) : " btcPercentIncreasePerMonthInUSD
+read -p "Amount invested by month USD: " amountInvestedByMonth
+read -p "Number of years (by default 4 years):" numberOfYears
+read -p "Starting bitcoin price in USD (by default 20000 USD): " startingBitcoinPriceInUSD
+read -p "Percentage of increase by month of the Bitcoin price in USD (Hypothesis by default 2%): " btcPercentIncreasePerMonthInUSD
 
 numberOfYears=${numberOfYears:-4}
 startingBitcoinPriceInUSD=${startingBitcoinPriceInUSD:-20000}
