@@ -13,7 +13,7 @@
  * @param {number} percentIncreasePerMonth - The percent increase per month of bitcoin in USD
  * @returns {object} - The array of each month's average value of bitcoin accumulated in Bitcoin and USD.
  */
-const dcaProjection = function (amountInvestedByMonth, numberOfYears = 4, startingBitcoinPriceInUSD = 20000, btcPercentIncreasePerMonthInUSD = 3) {
+const dcaProjection = function (amountInvestedByMonth, numberOfYears = 4, startingBitcoinPriceInUSD = 20000, btcPercentIncreasePerMonthInUSD = 2) {
     const bitcoinProjection = [];
     const accumulator = {
       bitcoinAccumulated: 0,
