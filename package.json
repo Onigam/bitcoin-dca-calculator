@@ -1,10 +1,12 @@
 {
   "name": "bitcoin-dca-calculator",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "start": "sh dca.sh"
+    "start": "sh dca.sh",
+    "build": "tsc --declaration"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Onigam/bitcoin-dca-calculator/issues"
   },
-  "homepage": "https://github.com/Onigam/bitcoin-dca-calculator#readme"
+  "homepage": "https://github.com/Onigam/bitcoin-dca-calculator#readme",
+  "devDependencies": {
+    "typescript": "^5.0.2"
+  }
 }

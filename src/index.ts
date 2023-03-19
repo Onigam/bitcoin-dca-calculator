@@ -1,3 +1,11 @@
+type BitcoinMonthProjection = {
+  month: number;
+  bitcoinAccumulated: number;
+  usdAccumulated: number;
+  bitcoinPriceInUSD: number;
+  usdInvested: number;
+};
+
 /**
  * This function takes a USD amount invested by month and returns an array of each
  * month's average value of bitcoin accumulated in Bitcoin and USD.
@@ -13,7 +21,7 @@
  * @param {number} percentIncreasePerMonth - The percent increase per month of bitcoin in USD
  * @returns {object} - The array of each month's average value of bitcoin accumulated in Bitcoin and USD.
  */
-const dcaProjection = function (amountInvestedByMonth, numberOfYears = 4, startingBitcoinPriceInUSD = 20000, btcPercentIncreasePerMonthInUSD = 2) {
+const dcaProjection = (amountInvestedByMonth = 100, numberOfYears = 4, startingBitcoinPriceInUSD = 20000, btcPercentIncreasePerMonthInUSD = 2): BitcoinMonthProjection[] => {
     const bitcoinProjection = [];
     const accumulator = {
       bitcoinAccumulated: 0,
@@ -27,9 +35,9 @@ const dcaProjection = function (amountInvestedByMonth, numberOfYears = 4, starti
   
       bitcoinProjection.push({
         month,
-        bitcoinAccumulated: parseFloat(parseFloat(bitcoinAccumulated).toFixed(3)),
-        usdAccumulated: parseInt(usdAccumulated),
-        bitcoinPriceInUSD: parseInt(bitcoinPriceForMonth),
+        bitcoinAccumulated: parseFloat(parseFloat(bitcoinAccumulated.toString()).toFixed(3)),
+        usdAccumulated: parseInt(usdAccumulated.toString()),
+        bitcoinPriceInUSD: parseInt(bitcoinPriceForMonth.toString()),
         usdInvested: usdInvested
       });
       
@@ -40,4 +48,4 @@ const dcaProjection = function (amountInvestedByMonth, numberOfYears = 4, starti
     return bitcoinProjection;
   };
   
-  module.exports = dcaProjection;
+  export default dcaProjection;
