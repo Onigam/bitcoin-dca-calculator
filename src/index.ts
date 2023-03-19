@@ -19,7 +19,7 @@ type BitcoinMonthProjection = {
  * @param @type {number} numberOfYears - The number of years to project
  * @param @type {number} startingBitcoinPriceInUSD - The bitcoin price in USD
  * @param @type {number} btcPercentIncreasePerMonthInUSD - The percent increase per month of bitcoin in USD
- * @returns @type {BitcoinMonthProjection[]} - An array of objects with the month's bitcoin value in Bitcoin and USD.
+ * @returns @type {BitcoinMonthProjection[]} - An array of objects by month containing the bitcoin accumulated in Bitcoin and USD.
  */
 const dcaProjection = (amountInvestedByMonthInUSD = 100, numberOfYears = 4, startingBitcoinPriceInUSD = 20000, btcPercentIncreasePerMonthInUSD = 2): BitcoinMonthProjection[] => {
     const bitcoinProjection = [];
