@@ -1,11 +1,19 @@
 {
   "name": "bitcoin-dca-calculator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "sh dca.sh"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Onigam/bitcoin-dca-calculator.git"
+  },
   "author": "Magino Marveaux-Cochet",
-  "license": "GPL-3.0"
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Onigam/bitcoin-dca-calculator/issues"
+  },
+  "homepage": "https://github.com/Onigam/bitcoin-dca-calculator#readme"
 }
